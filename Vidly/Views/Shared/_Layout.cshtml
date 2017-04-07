@@ -1,6 +1,7 @@
 ﻿
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,16 +12,16 @@
 </head>
 <body>
     @Html.Partial("_NavBar")
-<div class="container body-content">
-    @RenderBody()
-    <hr/>
-    <footer>
-        <p>&copy; @DateTime.Now.Year - Vidly</p>
-    </footer>
-</div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Vidly</p>
+        </footer>
+    </div>
 
 
-@Scripts.Render("~/bundles/lib")
-@RenderSection("scripts", required: false)
+    @Scripts.Render("~/bundles/lib")
+    @RenderSection("scripts", required: false)
 </body>
 </html>
