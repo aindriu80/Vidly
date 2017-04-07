@@ -55,14 +55,14 @@ namespace Vidly
             //   consumerSecret: "");
 
             app.UseFacebookAuthentication(
-               appId: "123",
-               appSecret: "1234");
+               appId: "Jimmy 007",
+               appSecret: "Bond");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "Jimmy 007.apps.googleusercontent.com",
+                ClientSecret = "007Bond"
+            });
         }
     }
 }
