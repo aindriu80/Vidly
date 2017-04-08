@@ -45,23 +45,23 @@ namespace Vidly
             // This is similar to the RememberMe option when you log in.
             app.UseTwoFactorRememberBrowserCookie(DefaultAuthenticationTypes.TwoFactorRememberBrowserCookie);
 
-            // Uncomment the following lines to enable logging in with third party login providers
+            //   Uncomment the following lines to enable logging in with third party login providers
             //app.UseMicrosoftAccountAuthentication(
-            //    clientId: "",
-            //    clientSecret: "");
+            //    clientId: "2",
+            //    clientSecret: "2");
 
-            //app.UseTwitterAuthentication(
-            //   consumerKey: "",
-            //   consumerSecret: "");
+            app.UseTwitterAuthentication(
+               consumerKey: "x",
+               consumerSecret: "x");
 
             app.UseFacebookAuthentication(
-               appId: "Jimmy 007",
-               appSecret: "Bond");
+              appId: "x",
+              appSecret: "x");
 
             app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             {
-                ClientId = "Jimmy 007.apps.googleusercontent.com",
-                ClientSecret = "007Bond"
+                ClientId = "xm",
+                ClientSecret = "x"
             });
         }
     }
