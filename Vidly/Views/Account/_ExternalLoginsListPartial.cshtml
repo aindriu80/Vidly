@@ -20,13 +20,10 @@
 
             <div id="socialLoginList">
                 
-                <div class="btn-group-vertical" aria-label="Login Providers">
+                <div class="btn-group" aria-label="Login Providers">
                     @foreach (AuthenticationDescription p in loginProviders)
                     {
-                       
-
-                       
-                        <button type="submit" class="externalLoginService socialLoginButton @p.AuthenticationType.ToLower()" 
+                        <button type="submit" class="socialLoginButton @p.AuthenticationType.ToLower()" 
                                 id="@p.AuthenticationType" name="provider"
                                 value="@p.AuthenticationType" 
                                 title="Log in with @p.Caption">@p.AuthenticationType</button>
